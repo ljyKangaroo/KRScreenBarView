@@ -1,0 +1,719 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		88EED2862015D1A300266758 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EED2852015D1A300266758 /* AppDelegate.m */; };
+		88EED2892015D1A300266758 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EED2882015D1A300266758 /* ViewController.m */; };
+		88EED28C2015D1A300266758 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88EED28A2015D1A300266758 /* Main.storyboard */; };
+		88EED28E2015D1A300266758 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88EED28D2015D1A300266758 /* Assets.xcassets */; };
+		88EED2912015D1A300266758 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88EED28F2015D1A300266758 /* LaunchScreen.storyboard */; };
+		88EED2942015D1A400266758 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EED2932015D1A400266758 /* main.m */; };
+		88EED29E2015D1A400266758 /* KRScreenBarViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EED29D2015D1A400266758 /* KRScreenBarViewDemoTests.m */; };
+		88EED2A92015D1A400266758 /* KRScreenBarViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EED2A82015D1A400266758 /* KRScreenBarViewDemoUITests.m */; };
+		88EEDBC02015D36000266758 /* KRScreenBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EEDBA72015D2EA00266758 /* KRScreenBarView.m */; };
+		88EEDBC12015D36400266758 /* KRScreenTitleBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EEDBBF2015D30600266758 /* KRScreenTitleBarView.m */; };
+		88EEDBC22015D36600266758 /* KRScreenTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EEDBBE2015D30600266758 /* KRScreenTitleButton.m */; };
+		88EEDBC32015D37200266758 /* KRScreenOptionListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EEDBB12015D2FA00266758 /* KRScreenOptionListCell.m */; };
+		88EEDBC42015D37500266758 /* KRScreenOptionListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EEDBB02015D2FA00266758 /* KRScreenOptionListView.m */; };
+		88EEDBC52015D37800266758 /* KRScreenOptionTwoLeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EEDBBB2015D30100266758 /* KRScreenOptionTwoLeftCell.m */; };
+		88EEDBC62015D37A00266758 /* KRScreenOptionTwoListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EEDBB52015D30100266758 /* KRScreenOptionTwoListView.m */; };
+		88EEDBC72015D37D00266758 /* KRScreenOptionTwoRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EEDBB82015D30100266758 /* KRScreenOptionTwoRightCell.m */; };
+		88EEDBC82015D37F00266758 /* KROptionCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EEDBAB2015D2F300266758 /* KROptionCollectionCell.m */; };
+		88EEDBC92015D38100266758 /* KROptionCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EEDBAA2015D2F300266758 /* KROptionCollectionView.m */; };
+		88EEDBD22015D45000266758 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EEDBD12015D44500266758 /* UIView+Frame.m */; };
+		88EEDBD72015D61500266758 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EEDBD62015D61500266758 /* UIButton+Extension.m */; };
+		88EEDBDA2015D6ED00266758 /* UITableViewCell+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EEDBD92015D6ED00266758 /* UITableViewCell+Extension.m */; };
+		88EEDBDC2015DB2000266758 /* KRScreenOptionListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88EEDBB32015D2FA00266758 /* KRScreenOptionListCell.xib */; };
+		88EEDBDD2015DB3200266758 /* KRScreenOptionTwoLeftCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88EEDBB62015D30100266758 /* KRScreenOptionTwoLeftCell.xib */; };
+		88EEDBDE2015DB3600266758 /* KRScreenOptionTwoRightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88EEDBB92015D30100266758 /* KRScreenOptionTwoRightCell.xib */; };
+		88EEDBDF2015DB3A00266758 /* KROptionCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88EEDBAC2015D2F300266758 /* KROptionCollectionCell.xib */; };
+		88EEDBE22015DE3500266758 /* KRScreenOptionTwoIndexPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EEDBE12015DE3500266758 /* KRScreenOptionTwoIndexPath.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		88EED29A2015D1A400266758 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88EED2792015D1A300266758 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88EED2802015D1A300266758;
+			remoteInfo = KRScreenBarViewDemo;
+		};
+		88EED2A52015D1A400266758 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88EED2792015D1A300266758 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88EED2802015D1A300266758;
+			remoteInfo = KRScreenBarViewDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		88EED2812015D1A300266758 /* KRScreenBarViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KRScreenBarViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88EED2842015D1A300266758 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		88EED2852015D1A300266758 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		88EED2872015D1A300266758 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		88EED2882015D1A300266758 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		88EED28B2015D1A300266758 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		88EED28D2015D1A300266758 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88EED2902015D1A300266758 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		88EED2922015D1A300266758 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88EED2932015D1A400266758 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		88EED2992015D1A400266758 /* KRScreenBarViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KRScreenBarViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88EED29D2015D1A400266758 /* KRScreenBarViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KRScreenBarViewDemoTests.m; sourceTree = "<group>"; };
+		88EED29F2015D1A400266758 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88EED2A42015D1A400266758 /* KRScreenBarViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KRScreenBarViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88EED2A82015D1A400266758 /* KRScreenBarViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KRScreenBarViewDemoUITests.m; sourceTree = "<group>"; };
+		88EED2AA2015D1A400266758 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88EEDBA72015D2EA00266758 /* KRScreenBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KRScreenBarView.m; sourceTree = "<group>"; };
+		88EEDBA82015D2EA00266758 /* KRScreenBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KRScreenBarView.h; sourceTree = "<group>"; };
+		88EEDBA92015D2EA00266758 /* KRScreenBarInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KRScreenBarInterface.h; sourceTree = "<group>"; };
+		88EEDBAA2015D2F300266758 /* KROptionCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KROptionCollectionView.m; sourceTree = "<group>"; };
+		88EEDBAB2015D2F300266758 /* KROptionCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KROptionCollectionCell.m; sourceTree = "<group>"; };
+		88EEDBAC2015D2F300266758 /* KROptionCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KROptionCollectionCell.xib; sourceTree = "<group>"; };
+		88EEDBAD2015D2F300266758 /* KROptionCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KROptionCollectionView.h; sourceTree = "<group>"; };
+		88EEDBAE2015D2F300266758 /* KROptionCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KROptionCollectionCell.h; sourceTree = "<group>"; };
+		88EEDBAF2015D2FA00266758 /* KRScreenOptionListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KRScreenOptionListView.h; sourceTree = "<group>"; };
+		88EEDBB02015D2FA00266758 /* KRScreenOptionListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KRScreenOptionListView.m; sourceTree = "<group>"; };
+		88EEDBB12015D2FA00266758 /* KRScreenOptionListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KRScreenOptionListCell.m; sourceTree = "<group>"; };
+		88EEDBB22015D2FA00266758 /* KRScreenOptionListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KRScreenOptionListCell.h; sourceTree = "<group>"; };
+		88EEDBB32015D2FA00266758 /* KRScreenOptionListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KRScreenOptionListCell.xib; sourceTree = "<group>"; };
+		88EEDBB42015D30100266758 /* KRScreenOptionTwoRightCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KRScreenOptionTwoRightCell.h; sourceTree = "<group>"; };
+		88EEDBB52015D30100266758 /* KRScreenOptionTwoListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KRScreenOptionTwoListView.m; sourceTree = "<group>"; };
+		88EEDBB62015D30100266758 /* KRScreenOptionTwoLeftCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KRScreenOptionTwoLeftCell.xib; sourceTree = "<group>"; };
+		88EEDBB72015D30100266758 /* KRScreenOptionTwoLeftCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KRScreenOptionTwoLeftCell.h; sourceTree = "<group>"; };
+		88EEDBB82015D30100266758 /* KRScreenOptionTwoRightCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KRScreenOptionTwoRightCell.m; sourceTree = "<group>"; };
+		88EEDBB92015D30100266758 /* KRScreenOptionTwoRightCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KRScreenOptionTwoRightCell.xib; sourceTree = "<group>"; };
+		88EEDBBA2015D30100266758 /* KRScreenOptionTwoListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KRScreenOptionTwoListView.h; sourceTree = "<group>"; };
+		88EEDBBB2015D30100266758 /* KRScreenOptionTwoLeftCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KRScreenOptionTwoLeftCell.m; sourceTree = "<group>"; };
+		88EEDBBC2015D30600266758 /* KRScreenTitleButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KRScreenTitleButton.h; sourceTree = "<group>"; };
+		88EEDBBD2015D30600266758 /* KRScreenTitleBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KRScreenTitleBarView.h; sourceTree = "<group>"; };
+		88EEDBBE2015D30600266758 /* KRScreenTitleButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KRScreenTitleButton.m; sourceTree = "<group>"; };
+		88EEDBBF2015D30600266758 /* KRScreenTitleBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KRScreenTitleBarView.m; sourceTree = "<group>"; };
+		88EEDBD02015D44500266758 /* UIView+Frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		88EEDBD12015D44500266758 /* UIView+Frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		88EEDBD32015D47800266758 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		88EEDBD52015D61500266758 /* UIButton+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
+		88EEDBD62015D61500266758 /* UIButton+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extension.m"; sourceTree = "<group>"; };
+		88EEDBD82015D6ED00266758 /* UITableViewCell+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Extension.h"; sourceTree = "<group>"; };
+		88EEDBD92015D6ED00266758 /* UITableViewCell+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Extension.m"; sourceTree = "<group>"; };
+		88EEDBDB2015D73000266758 /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
+		88EEDBE02015DE3500266758 /* KRScreenOptionTwoIndexPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KRScreenOptionTwoIndexPath.h; sourceTree = "<group>"; };
+		88EEDBE12015DE3500266758 /* KRScreenOptionTwoIndexPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KRScreenOptionTwoIndexPath.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88EED27E2015D1A300266758 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88EED2962015D1A400266758 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88EED2A12015D1A400266758 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88EED2782015D1A300266758 = {
+			isa = PBXGroup;
+			children = (
+				88EED2832015D1A300266758 /* KRScreenBarViewDemo */,
+				88EED29C2015D1A400266758 /* KRScreenBarViewDemoTests */,
+				88EED2A72015D1A400266758 /* KRScreenBarViewDemoUITests */,
+				88EED2822015D1A300266758 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		88EED2822015D1A300266758 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88EED2812015D1A300266758 /* KRScreenBarViewDemo.app */,
+				88EED2992015D1A400266758 /* KRScreenBarViewDemoTests.xctest */,
+				88EED2A42015D1A400266758 /* KRScreenBarViewDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88EED2832015D1A300266758 /* KRScreenBarViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				88EEDBD42015D48100266758 /* SupportingFiles */,
+				88EEDBCF2015D44000266758 /* Categrory */,
+				88EEDB892015D23800266758 /* KRScreenBarView */,
+				88EED2872015D1A300266758 /* ViewController.h */,
+				88EED2882015D1A300266758 /* ViewController.m */,
+				88EED28A2015D1A300266758 /* Main.storyboard */,
+				88EED2922015D1A300266758 /* Info.plist */,
+				88EED2932015D1A400266758 /* main.m */,
+			);
+			path = KRScreenBarViewDemo;
+			sourceTree = "<group>";
+		};
+		88EED29C2015D1A400266758 /* KRScreenBarViewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				88EED29D2015D1A400266758 /* KRScreenBarViewDemoTests.m */,
+				88EED29F2015D1A400266758 /* Info.plist */,
+			);
+			path = KRScreenBarViewDemoTests;
+			sourceTree = "<group>";
+		};
+		88EED2A72015D1A400266758 /* KRScreenBarViewDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				88EED2A82015D1A400266758 /* KRScreenBarViewDemoUITests.m */,
+				88EED2AA2015D1A400266758 /* Info.plist */,
+			);
+			path = KRScreenBarViewDemoUITests;
+			sourceTree = "<group>";
+		};
+		88EEDB892015D23800266758 /* KRScreenBarView */ = {
+			isa = PBXGroup;
+			children = (
+				88EEDBA92015D2EA00266758 /* KRScreenBarInterface.h */,
+				88EEDBA82015D2EA00266758 /* KRScreenBarView.h */,
+				88EEDBA72015D2EA00266758 /* KRScreenBarView.m */,
+				88EEDB902015D26800266758 /* TitleBarView */,
+				88EEDB8F2015D26200266758 /* OptionListView */,
+				88EEDB8E2015D25A00266758 /* OptionTwoListView */,
+				88EEDB8D2015D25000266758 /* OptionCollectionView */,
+			);
+			path = KRScreenBarView;
+			sourceTree = "<group>";
+		};
+		88EEDB8D2015D25000266758 /* OptionCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				88EEDBAE2015D2F300266758 /* KROptionCollectionCell.h */,
+				88EEDBAB2015D2F300266758 /* KROptionCollectionCell.m */,
+				88EEDBAC2015D2F300266758 /* KROptionCollectionCell.xib */,
+				88EEDBAD2015D2F300266758 /* KROptionCollectionView.h */,
+				88EEDBAA2015D2F300266758 /* KROptionCollectionView.m */,
+			);
+			path = OptionCollectionView;
+			sourceTree = "<group>";
+		};
+		88EEDB8E2015D25A00266758 /* OptionTwoListView */ = {
+			isa = PBXGroup;
+			children = (
+				88EEDBBA2015D30100266758 /* KRScreenOptionTwoListView.h */,
+				88EEDBB52015D30100266758 /* KRScreenOptionTwoListView.m */,
+				88EEDBB72015D30100266758 /* KRScreenOptionTwoLeftCell.h */,
+				88EEDBBB2015D30100266758 /* KRScreenOptionTwoLeftCell.m */,
+				88EEDBB62015D30100266758 /* KRScreenOptionTwoLeftCell.xib */,
+				88EEDBB42015D30100266758 /* KRScreenOptionTwoRightCell.h */,
+				88EEDBB82015D30100266758 /* KRScreenOptionTwoRightCell.m */,
+				88EEDBB92015D30100266758 /* KRScreenOptionTwoRightCell.xib */,
+				88EEDBE02015DE3500266758 /* KRScreenOptionTwoIndexPath.h */,
+				88EEDBE12015DE3500266758 /* KRScreenOptionTwoIndexPath.m */,
+			);
+			path = OptionTwoListView;
+			sourceTree = "<group>";
+		};
+		88EEDB8F2015D26200266758 /* OptionListView */ = {
+			isa = PBXGroup;
+			children = (
+				88EEDBB22015D2FA00266758 /* KRScreenOptionListCell.h */,
+				88EEDBB12015D2FA00266758 /* KRScreenOptionListCell.m */,
+				88EEDBB32015D2FA00266758 /* KRScreenOptionListCell.xib */,
+				88EEDBAF2015D2FA00266758 /* KRScreenOptionListView.h */,
+				88EEDBB02015D2FA00266758 /* KRScreenOptionListView.m */,
+			);
+			path = OptionListView;
+			sourceTree = "<group>";
+		};
+		88EEDB902015D26800266758 /* TitleBarView */ = {
+			isa = PBXGroup;
+			children = (
+				88EEDBBD2015D30600266758 /* KRScreenTitleBarView.h */,
+				88EEDBBF2015D30600266758 /* KRScreenTitleBarView.m */,
+				88EEDBBC2015D30600266758 /* KRScreenTitleButton.h */,
+				88EEDBBE2015D30600266758 /* KRScreenTitleButton.m */,
+			);
+			path = TitleBarView;
+			sourceTree = "<group>";
+		};
+		88EEDBCF2015D44000266758 /* Categrory */ = {
+			isa = PBXGroup;
+			children = (
+				88EEDBD82015D6ED00266758 /* UITableViewCell+Extension.h */,
+				88EEDBD92015D6ED00266758 /* UITableViewCell+Extension.m */,
+				88EEDBD52015D61500266758 /* UIButton+Extension.h */,
+				88EEDBD62015D61500266758 /* UIButton+Extension.m */,
+				88EEDBD02015D44500266758 /* UIView+Frame.h */,
+				88EEDBD12015D44500266758 /* UIView+Frame.m */,
+			);
+			path = Categrory;
+			sourceTree = "<group>";
+		};
+		88EEDBD42015D48100266758 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				88EED2842015D1A300266758 /* AppDelegate.h */,
+				88EED2852015D1A300266758 /* AppDelegate.m */,
+				88EED28D2015D1A300266758 /* Assets.xcassets */,
+				88EED28F2015D1A300266758 /* LaunchScreen.storyboard */,
+				88EEDBD32015D47800266758 /* PrefixHeader.pch */,
+				88EEDBDB2015D73000266758 /* Defines.h */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88EED2802015D1A300266758 /* KRScreenBarViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88EED2AD2015D1A400266758 /* Build configuration list for PBXNativeTarget "KRScreenBarViewDemo" */;
+			buildPhases = (
+				88EED27D2015D1A300266758 /* Sources */,
+				88EED27E2015D1A300266758 /* Frameworks */,
+				88EED27F2015D1A300266758 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KRScreenBarViewDemo;
+			productName = KRScreenBarViewDemo;
+			productReference = 88EED2812015D1A300266758 /* KRScreenBarViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		88EED2982015D1A400266758 /* KRScreenBarViewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88EED2B02015D1A400266758 /* Build configuration list for PBXNativeTarget "KRScreenBarViewDemoTests" */;
+			buildPhases = (
+				88EED2952015D1A400266758 /* Sources */,
+				88EED2962015D1A400266758 /* Frameworks */,
+				88EED2972015D1A400266758 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88EED29B2015D1A400266758 /* PBXTargetDependency */,
+			);
+			name = KRScreenBarViewDemoTests;
+			productName = KRScreenBarViewDemoTests;
+			productReference = 88EED2992015D1A400266758 /* KRScreenBarViewDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		88EED2A32015D1A400266758 /* KRScreenBarViewDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88EED2B32015D1A400266758 /* Build configuration list for PBXNativeTarget "KRScreenBarViewDemoUITests" */;
+			buildPhases = (
+				88EED2A02015D1A400266758 /* Sources */,
+				88EED2A12015D1A400266758 /* Frameworks */,
+				88EED2A22015D1A400266758 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88EED2A62015D1A400266758 /* PBXTargetDependency */,
+			);
+			name = KRScreenBarViewDemoUITests;
+			productName = KRScreenBarViewDemoUITests;
+			productReference = 88EED2A42015D1A400266758 /* KRScreenBarViewDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88EED2792015D1A300266758 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Karo;
+				TargetAttributes = {
+					88EED2802015D1A300266758 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					88EED2982015D1A400266758 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 88EED2802015D1A300266758;
+					};
+					88EED2A32015D1A400266758 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 88EED2802015D1A300266758;
+					};
+				};
+			};
+			buildConfigurationList = 88EED27C2015D1A300266758 /* Build configuration list for PBXProject "KRScreenBarViewDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88EED2782015D1A300266758;
+			productRefGroup = 88EED2822015D1A300266758 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88EED2802015D1A300266758 /* KRScreenBarViewDemo */,
+				88EED2982015D1A400266758 /* KRScreenBarViewDemoTests */,
+				88EED2A32015D1A400266758 /* KRScreenBarViewDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88EED27F2015D1A300266758 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88EED2912015D1A300266758 /* LaunchScreen.storyboard in Resources */,
+				88EEDBDE2015DB3600266758 /* KRScreenOptionTwoRightCell.xib in Resources */,
+				88EEDBDC2015DB2000266758 /* KRScreenOptionListCell.xib in Resources */,
+				88EEDBDD2015DB3200266758 /* KRScreenOptionTwoLeftCell.xib in Resources */,
+				88EED28E2015D1A300266758 /* Assets.xcassets in Resources */,
+				88EEDBDF2015DB3A00266758 /* KROptionCollectionCell.xib in Resources */,
+				88EED28C2015D1A300266758 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88EED2972015D1A400266758 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88EED2A22015D1A400266758 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88EED27D2015D1A300266758 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88EEDBC42015D37500266758 /* KRScreenOptionListView.m in Sources */,
+				88EEDBC82015D37F00266758 /* KROptionCollectionCell.m in Sources */,
+				88EEDBC52015D37800266758 /* KRScreenOptionTwoLeftCell.m in Sources */,
+				88EEDBC12015D36400266758 /* KRScreenTitleBarView.m in Sources */,
+				88EED2892015D1A300266758 /* ViewController.m in Sources */,
+				88EEDBC02015D36000266758 /* KRScreenBarView.m in Sources */,
+				88EEDBD72015D61500266758 /* UIButton+Extension.m in Sources */,
+				88EEDBC72015D37D00266758 /* KRScreenOptionTwoRightCell.m in Sources */,
+				88EEDBE22015DE3500266758 /* KRScreenOptionTwoIndexPath.m in Sources */,
+				88EEDBC92015D38100266758 /* KROptionCollectionView.m in Sources */,
+				88EED2942015D1A400266758 /* main.m in Sources */,
+				88EEDBDA2015D6ED00266758 /* UITableViewCell+Extension.m in Sources */,
+				88EED2862015D1A300266758 /* AppDelegate.m in Sources */,
+				88EEDBD22015D45000266758 /* UIView+Frame.m in Sources */,
+				88EEDBC62015D37A00266758 /* KRScreenOptionTwoListView.m in Sources */,
+				88EEDBC22015D36600266758 /* KRScreenTitleButton.m in Sources */,
+				88EEDBC32015D37200266758 /* KRScreenOptionListCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88EED2952015D1A400266758 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88EED29E2015D1A400266758 /* KRScreenBarViewDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88EED2A02015D1A400266758 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88EED2A92015D1A400266758 /* KRScreenBarViewDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		88EED29B2015D1A400266758 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88EED2802015D1A300266758 /* KRScreenBarViewDemo */;
+			targetProxy = 88EED29A2015D1A400266758 /* PBXContainerItemProxy */;
+		};
+		88EED2A62015D1A400266758 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88EED2802015D1A300266758 /* KRScreenBarViewDemo */;
+			targetProxy = 88EED2A52015D1A400266758 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		88EED28A2015D1A300266758 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88EED28B2015D1A300266758 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		88EED28F2015D1A300266758 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88EED2902015D1A300266758 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88EED2AB2015D1A400266758 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		88EED2AC2015D1A400266758 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88EED2AE2015D1A400266758 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/KRScreenBarViewDemo/SupportingFiles/PrefixHeader.pch";
+				INFOPLIST_FILE = KRScreenBarViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.Padding.KRScreenBarViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		88EED2AF2015D1A400266758 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/KRScreenBarViewDemo/SupportingFiles/PrefixHeader.pch";
+				INFOPLIST_FILE = KRScreenBarViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.Padding.KRScreenBarViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		88EED2B12015D1A400266758 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KRScreenBarViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.Padding.KRScreenBarViewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KRScreenBarViewDemo.app/KRScreenBarViewDemo";
+			};
+			name = Debug;
+		};
+		88EED2B22015D1A400266758 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KRScreenBarViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.Padding.KRScreenBarViewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KRScreenBarViewDemo.app/KRScreenBarViewDemo";
+			};
+			name = Release;
+		};
+		88EED2B42015D1A400266758 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KRScreenBarViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.Padding.KRScreenBarViewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KRScreenBarViewDemo;
+			};
+			name = Debug;
+		};
+		88EED2B52015D1A400266758 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KRScreenBarViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.Padding.KRScreenBarViewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KRScreenBarViewDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88EED27C2015D1A300266758 /* Build configuration list for PBXProject "KRScreenBarViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88EED2AB2015D1A400266758 /* Debug */,
+				88EED2AC2015D1A400266758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88EED2AD2015D1A400266758 /* Build configuration list for PBXNativeTarget "KRScreenBarViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88EED2AE2015D1A400266758 /* Debug */,
+				88EED2AF2015D1A400266758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88EED2B02015D1A400266758 /* Build configuration list for PBXNativeTarget "KRScreenBarViewDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88EED2B12015D1A400266758 /* Debug */,
+				88EED2B22015D1A400266758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88EED2B32015D1A400266758 /* Build configuration list for PBXNativeTarget "KRScreenBarViewDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88EED2B42015D1A400266758 /* Debug */,
+				88EED2B52015D1A400266758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88EED2792015D1A300266758 /* Project object */;
+}
