@@ -242,13 +242,13 @@
 			isa = PBXGroup;
 			children = (
 				884591482015E91E0082B2F0 /* Categrory */,
+				880E50512015E80100ADFB52 /* TitleBarView */,
+				880E50532015E82F00ADFB52 /* OptionListView */,
+				880E50542015E84800ADFB52 /* OptionTwoListView */,
 				884591432015E9050082B2F0 /* OptionCollectionView */,
 				88EEDBA92015D2EA00266758 /* KRScreenBarInterface.h */,
 				88EEDBA82015D2EA00266758 /* KRScreenBarView.h */,
 				88EEDBA72015D2EA00266758 /* KRScreenBarView.m */,
-				880E50542015E84800ADFB52 /* OptionTwoListView */,
-				880E50532015E82F00ADFB52 /* OptionListView */,
-				880E50512015E80100ADFB52 /* TitleBarView */,
 			);
 			path = KRScreenBarView;
 			sourceTree = "<group>";
