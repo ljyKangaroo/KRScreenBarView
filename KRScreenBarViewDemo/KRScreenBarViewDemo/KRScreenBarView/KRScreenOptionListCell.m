@@ -21,7 +21,7 @@
 
     self.lineBtn.hidden = YES;
     self.lineBtn.layer.masksToBounds =YES;
-    self.lineBtn.layer.cornerRadius = self.lineBtn.height *0.5;
+    self.lineBtn.layer.cornerRadius = self.lineBtn.frame.size.height *0.5;
 }
 
 + (instancetype)cellNibWithTableView:(UITableView *)tableView forIndexPath:(NSIndexPath *)indexPath {

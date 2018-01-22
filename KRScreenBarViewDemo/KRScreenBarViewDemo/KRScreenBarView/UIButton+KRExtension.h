@@ -14,7 +14,7 @@ typedef NS_ENUM(NSUInteger, BRButtonEdgeInsetsStyle) {
     BRButtonEdgeInsetsStyleRight    // image在右，label在左
 };
 
-@interface UIButton (Extension)
+@interface UIButton (KRExtension)
 
 
 /**

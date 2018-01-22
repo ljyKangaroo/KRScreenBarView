@@ -25,9 +25,7 @@
 		88EEDBC72015D37D00266758 /* KRScreenOptionTwoRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EEDBB82015D30100266758 /* KRScreenOptionTwoRightCell.m */; };
 		88EEDBC82015D37F00266758 /* KROptionCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EEDBAB2015D2F300266758 /* KROptionCollectionCell.m */; };
 		88EEDBC92015D38100266758 /* KROptionCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EEDBAA2015D2F300266758 /* KROptionCollectionView.m */; };
-		88EEDBD22015D45000266758 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EEDBD12015D44500266758 /* UIView+Frame.m */; };
-		88EEDBD72015D61500266758 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EEDBD62015D61500266758 /* UIButton+Extension.m */; };
-		88EEDBDA2015D6ED00266758 /* UITableViewCell+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EEDBD92015D6ED00266758 /* UITableViewCell+Extension.m */; };
+		88EEDBD72015D61500266758 /* UIButton+KRExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EEDBD62015D61500266758 /* UIButton+KRExtension.m */; };
 		88EEDBDC2015DB2000266758 /* KRScreenOptionListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88EEDBB32015D2FA00266758 /* KRScreenOptionListCell.xib */; };
 		88EEDBDD2015DB3200266758 /* KRScreenOptionTwoLeftCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88EEDBB62015D30100266758 /* KRScreenOptionTwoLeftCell.xib */; };
 		88EEDBDE2015DB3600266758 /* KRScreenOptionTwoRightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88EEDBB92015D30100266758 /* KRScreenOptionTwoRightCell.xib */; };
@@ -94,13 +92,9 @@
 		88EEDBBD2015D30600266758 /* KRScreenTitleBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KRScreenTitleBarView.h; sourceTree = "<group>"; };
 		88EEDBBE2015D30600266758 /* KRScreenTitleButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KRScreenTitleButton.m; sourceTree = "<group>"; };
 		88EEDBBF2015D30600266758 /* KRScreenTitleBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KRScreenTitleBarView.m; sourceTree = "<group>"; };
-		88EEDBD02015D44500266758 /* UIView+Frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
-		88EEDBD12015D44500266758 /* UIView+Frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		88EEDBD32015D47800266758 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		88EEDBD52015D61500266758 /* UIButton+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
-		88EEDBD62015D61500266758 /* UIButton+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extension.m"; sourceTree = "<group>"; };
-		88EEDBD82015D6ED00266758 /* UITableViewCell+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Extension.h"; sourceTree = "<group>"; };
-		88EEDBD92015D6ED00266758 /* UITableViewCell+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Extension.m"; sourceTree = "<group>"; };
+		88EEDBD52015D61500266758 /* UIButton+KRExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+KRExtension.h"; sourceTree = "<group>"; };
+		88EEDBD62015D61500266758 /* UIButton+KRExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+KRExtension.m"; sourceTree = "<group>"; };
 		88EEDBDB2015D73000266758 /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
 		88EEDBE02015DE3500266758 /* KRScreenOptionTwoIndexPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KRScreenOptionTwoIndexPath.h; sourceTree = "<group>"; };
 		88EEDBE12015DE3500266758 /* KRScreenOptionTwoIndexPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KRScreenOptionTwoIndexPath.m; sourceTree = "<group>"; };
@@ -131,6 +125,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		880E50512015E80100ADFB52 /* TitleBarView */ = {
+			isa = PBXGroup;
+			children = (
+				88EEDBBD2015D30600266758 /* KRScreenTitleBarView.h */,
+				88EEDBBF2015D30600266758 /* KRScreenTitleBarView.m */,
+				88EEDBBC2015D30600266758 /* KRScreenTitleButton.h */,
+				88EEDBBE2015D30600266758 /* KRScreenTitleButton.m */,
+			);
+			name = TitleBarView;
+			sourceTree = "<group>";
+		};
+		880E50532015E82F00ADFB52 /* OptionListView */ = {
+			isa = PBXGroup;
+			children = (
+				88EEDBB22015D2FA00266758 /* KRScreenOptionListCell.h */,
+				88EEDBB12015D2FA00266758 /* KRScreenOptionListCell.m */,
+				88EEDBB32015D2FA00266758 /* KRScreenOptionListCell.xib */,
+				88EEDBAF2015D2FA00266758 /* KRScreenOptionListView.h */,
+				88EEDBB02015D2FA00266758 /* KRScreenOptionListView.m */,
+			);
+			name = OptionListView;
+			sourceTree = "<group>";
+		};
+		880E50542015E84800ADFB52 /* OptionTwoListView */ = {
+			isa = PBXGroup;
+			children = (
+				88EEDBBA2015D30100266758 /* KRScreenOptionTwoListView.h */,
+				88EEDBB52015D30100266758 /* KRScreenOptionTwoListView.m */,
+				88EEDBB72015D30100266758 /* KRScreenOptionTwoLeftCell.h */,
+				88EEDBBB2015D30100266758 /* KRScreenOptionTwoLeftCell.m */,
+				88EEDBB62015D30100266758 /* KRScreenOptionTwoLeftCell.xib */,
+				88EEDBB42015D30100266758 /* KRScreenOptionTwoRightCell.h */,
+				88EEDBB82015D30100266758 /* KRScreenOptionTwoRightCell.m */,
+				88EEDBB92015D30100266758 /* KRScreenOptionTwoRightCell.xib */,
+				88EEDBE02015DE3500266758 /* KRScreenOptionTwoIndexPath.h */,
+				88EEDBE12015DE3500266758 /* KRScreenOptionTwoIndexPath.m */,
+			);
+			name = OptionTwoListView;
+			sourceTree = "<group>";
+		};
+		884591432015E9050082B2F0 /* OptionCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				88EEDBAE2015D2F300266758 /* KROptionCollectionCell.h */,
+				88EEDBAB2015D2F300266758 /* KROptionCollectionCell.m */,
+				88EEDBAC2015D2F300266758 /* KROptionCollectionCell.xib */,
+				88EEDBAD2015D2F300266758 /* KROptionCollectionView.h */,
+				88EEDBAA2015D2F300266758 /* KROptionCollectionView.m */,
+			);
+			name = OptionCollectionView;
+			sourceTree = "<group>";
+		};
+		884591482015E91E0082B2F0 /* Categrory */ = {
+			isa = PBXGroup;
+			children = (
+				88EEDBD52015D61500266758 /* UIButton+KRExtension.h */,
+				88EEDBD62015D61500266758 /* UIButton+KRExtension.m */,
+			);
+			name = Categrory;
+			sourceTree = "<group>";
+		};
 		88EED2782015D1A300266758 = {
 			isa = PBXGroup;
 			children = (
@@ -155,7 +210,6 @@
 			isa = PBXGroup;
 			children = (
 				88EEDBD42015D48100266758 /* SupportingFiles */,
-				88EEDBCF2015D44000266758 /* Categrory */,
 				88EEDB892015D23800266758 /* KRScreenBarView */,
 				88EED2872015D1A300266758 /* ViewController.h */,
 				88EED2882015D1A300266758 /* ViewController.m */,
@@ -187,80 +241,16 @@
 		88EEDB892015D23800266758 /* KRScreenBarView */ = {
 			isa = PBXGroup;
 			children = (
+				884591482015E91E0082B2F0 /* Categrory */,
+				884591432015E9050082B2F0 /* OptionCollectionView */,
 				88EEDBA92015D2EA00266758 /* KRScreenBarInterface.h */,
 				88EEDBA82015D2EA00266758 /* KRScreenBarView.h */,
 				88EEDBA72015D2EA00266758 /* KRScreenBarView.m */,
-				88EEDB902015D26800266758 /* TitleBarView */,
-				88EEDB8F2015D26200266758 /* OptionListView */,
-				88EEDB8E2015D25A00266758 /* OptionTwoListView */,
-				88EEDB8D2015D25000266758 /* OptionCollectionView */,
+				880E50542015E84800ADFB52 /* OptionTwoListView */,
+				880E50532015E82F00ADFB52 /* OptionListView */,
+				880E50512015E80100ADFB52 /* TitleBarView */,
 			);
 			path = KRScreenBarView;
-			sourceTree = "<group>";
-		};
-		88EEDB8D2015D25000266758 /* OptionCollectionView */ = {
-			isa = PBXGroup;
-			children = (
-				88EEDBAE2015D2F300266758 /* KROptionCollectionCell.h */,
-				88EEDBAB2015D2F300266758 /* KROptionCollectionCell.m */,
-				88EEDBAC2015D2F300266758 /* KROptionCollectionCell.xib */,
-				88EEDBAD2015D2F300266758 /* KROptionCollectionView.h */,
-				88EEDBAA2015D2F300266758 /* KROptionCollectionView.m */,
-			);
-			path = OptionCollectionView;
-			sourceTree = "<group>";
-		};
-		88EEDB8E2015D25A00266758 /* OptionTwoListView */ = {
-			isa = PBXGroup;
-			children = (
-				88EEDBBA2015D30100266758 /* KRScreenOptionTwoListView.h */,
-				88EEDBB52015D30100266758 /* KRScreenOptionTwoListView.m */,
-				88EEDBB72015D30100266758 /* KRScreenOptionTwoLeftCell.h */,
-				88EEDBBB2015D30100266758 /* KRScreenOptionTwoLeftCell.m */,
-				88EEDBB62015D30100266758 /* KRScreenOptionTwoLeftCell.xib */,
-				88EEDBB42015D30100266758 /* KRScreenOptionTwoRightCell.h */,
-				88EEDBB82015D30100266758 /* KRScreenOptionTwoRightCell.m */,
-				88EEDBB92015D30100266758 /* KRScreenOptionTwoRightCell.xib */,
-				88EEDBE02015DE3500266758 /* KRScreenOptionTwoIndexPath.h */,
-				88EEDBE12015DE3500266758 /* KRScreenOptionTwoIndexPath.m */,
-			);
-			path = OptionTwoListView;
-			sourceTree = "<group>";
-		};
-		88EEDB8F2015D26200266758 /* OptionListView */ = {
-			isa = PBXGroup;
-			children = (
-				88EEDBB22015D2FA00266758 /* KRScreenOptionListCell.h */,
-				88EEDBB12015D2FA00266758 /* KRScreenOptionListCell.m */,
-				88EEDBB32015D2FA00266758 /* KRScreenOptionListCell.xib */,
-				88EEDBAF2015D2FA00266758 /* KRScreenOptionListView.h */,
-				88EEDBB02015D2FA00266758 /* KRScreenOptionListView.m */,
-			);
-			path = OptionListView;
-			sourceTree = "<group>";
-		};
-		88EEDB902015D26800266758 /* TitleBarView */ = {
-			isa = PBXGroup;
-			children = (
-				88EEDBBD2015D30600266758 /* KRScreenTitleBarView.h */,
-				88EEDBBF2015D30600266758 /* KRScreenTitleBarView.m */,
-				88EEDBBC2015D30600266758 /* KRScreenTitleButton.h */,
-				88EEDBBE2015D30600266758 /* KRScreenTitleButton.m */,
-			);
-			path = TitleBarView;
-			sourceTree = "<group>";
-		};
-		88EEDBCF2015D44000266758 /* Categrory */ = {
-			isa = PBXGroup;
-			children = (
-				88EEDBD82015D6ED00266758 /* UITableViewCell+Extension.h */,
-				88EEDBD92015D6ED00266758 /* UITableViewCell+Extension.m */,
-				88EEDBD52015D61500266758 /* UIButton+Extension.h */,
-				88EEDBD62015D61500266758 /* UIButton+Extension.m */,
-				88EEDBD02015D44500266758 /* UIView+Frame.h */,
-				88EEDBD12015D44500266758 /* UIView+Frame.m */,
-			);
-			path = Categrory;
 			sourceTree = "<group>";
 		};
 		88EEDBD42015D48100266758 /* SupportingFiles */ = {
@@ -419,14 +409,12 @@
 				88EEDBC12015D36400266758 /* KRScreenTitleBarView.m in Sources */,
 				88EED2892015D1A300266758 /* ViewController.m in Sources */,
 				88EEDBC02015D36000266758 /* KRScreenBarView.m in Sources */,
-				88EEDBD72015D61500266758 /* UIButton+Extension.m in Sources */,
+				88EEDBD72015D61500266758 /* UIButton+KRExtension.m in Sources */,
 				88EEDBC72015D37D00266758 /* KRScreenOptionTwoRightCell.m in Sources */,
 				88EEDBE22015DE3500266758 /* KRScreenOptionTwoIndexPath.m in Sources */,
 				88EEDBC92015D38100266758 /* KROptionCollectionView.m in Sources */,
 				88EED2942015D1A400266758 /* main.m in Sources */,
-				88EEDBDA2015D6ED00266758 /* UITableViewCell+Extension.m in Sources */,
 				88EED2862015D1A300266758 /* AppDelegate.m in Sources */,
-				88EEDBD22015D45000266758 /* UIView+Frame.m in Sources */,
 				88EEDBC62015D37A00266758 /* KRScreenOptionTwoListView.m in Sources */,
 				88EEDBC22015D36600266758 /* KRScreenTitleButton.m in Sources */,
 				88EEDBC32015D37200266758 /* KRScreenOptionListCell.m in Sources */,

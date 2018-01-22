@@ -6,9 +6,9 @@
 //  Copyright © 2018年 GeekBean Technology Co., Ltd. All rights reserved.
 //
 
-#import "UIButton+Extension.h"
+#import "UIButton+KRExtension.h"
 
-@implementation UIButton (GBExtension)
+@implementation UIButton (KRExtension)
 
 
 - (void)buttonWithEdgeInsetsStyle:(BRButtonEdgeInsetsStyle)style

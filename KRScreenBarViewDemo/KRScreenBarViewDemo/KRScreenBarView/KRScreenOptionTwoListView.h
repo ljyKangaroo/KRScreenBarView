@@ -13,7 +13,7 @@
 @property (nonatomic, weak) id <KRScreenOptionTwoListViewDataSource> dataSource;
 @property (nonatomic, weak) id <KRScreenOptionTwoListViewDelegate> delegate;
 
-//@property (nonatomic, assign) NSInteger selectIndexRow;
+
 
 - (void)reloadData;
 

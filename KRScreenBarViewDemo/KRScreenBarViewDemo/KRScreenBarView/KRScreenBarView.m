@@ -64,9 +64,11 @@ KROptionCollectionViewDataSource>
 
 - (void)layoutAllOptionView {
     for (UIView *view in self.optionViewArray) {
-        view.x = CGRectGetMinX(self.frame);
-        view.y = CGRectGetMinY(self.frame) + CGRectGetHeight(self.frame);
-        view.width = CGRectGetWidth(self.frame);
+        CGRect frame = view.frame;
+        frame.origin.x = CGRectGetMinX(self.frame);
+        frame.origin.y = CGRectGetMinY(self.frame) + CGRectGetHeight(self.frame);
+        frame.size.width = CGRectGetWidth(self.frame);
+        view.frame = frame;
     }
 }
 
@@ -271,18 +273,25 @@ KROptionCollectionViewDataSource>
 /** 指定当前的筛选表 */
 - (void)layoutOptionViewWithIndex:(NSInteger)index {
     // 重置上一个View的高度
-    self.optionView.height = 0;
+
+    [self setOptionViewWithHeight:0];
     // 根据索引到当前View
     if(self.optionViewArray.count > index) {
         self.optionView = self.optionViewArray[index];
     }
 }
 
+- (void)setOptionViewWithHeight:(CGFloat)height {
+    CGRect frame = self.optionView.frame;
+    frame.size.height = height;
+    self.optionView.frame = frame;
+}
+
 - (void)dismiss {
     [UIView animateWithDuration:0.28 animations:^{
         self.shadeView.alpha = 0.0;
         self.optionView.alpha = 0.0;
-        self.optionView.height = 0;
+        [self setOptionViewWithHeight:0];
         [self.optionView layoutIfNeeded];
     }];
 }
@@ -291,7 +300,7 @@ KROptionCollectionViewDataSource>
     [UIView animateWithDuration:0.28 animations:^{
         self.shadeView.alpha = 1.0f;
         self.optionView.alpha = 1.0f;
-        self.optionView.height =[self optionHeight];
+        [self setOptionViewWithHeight:[self optionHeight]];
         [self.optionView layoutIfNeeded];
     }];
 }

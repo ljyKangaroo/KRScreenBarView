@@ -1,5 +1,5 @@
 //
-//  KRScreenOptionTwoLeftCell.h
+//  KRScreenOptionTwoRightCell.h
 //  ShareJobStudent
 //
 //  Created by AlbertHuang on 2018/1/18.
@@ -8,13 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KRScreenOptionTwoLeftCell : UITableViewCell
-
+@interface KRScreenOptionTwoRightCell : UITableViewCell
 
 + (instancetype)cellNibWithTableView:(UITableView *)tableView
                         forIndexPath:(NSIndexPath *)indexPath;
 
 + (void)registerNibWithTableView:(UITableView *)tableView;
+
+
++ (CGFloat)cellHeight;
++ (NSString *)cellIdentifier;
 
 @property (nonatomic, assign) BOOL isSelect;
 

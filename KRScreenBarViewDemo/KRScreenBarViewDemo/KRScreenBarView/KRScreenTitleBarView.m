@@ -8,7 +8,6 @@
 
 #import "KRScreenTitleBarView.h"
 #import "KRScreenTitleButton.h"
-#import "UIButton+Extension.h"
 #import "KRScreenBarInterface.h"
 @interface KRScreenTitleBarView ()
 
@@ -38,13 +37,15 @@
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    
+    CGFloat width = self.frame.size.width;
+    CGFloat height = self.frame.size.height;
     for (int i = 0; i<self.buttonArray.count; i++) {
         KRScreenTitleButton *tmpBtn = self.buttonArray[i];
-        tmpBtn.frame = CGRectMake(i*(self.width/self.buttonArray.count) , 0, self.width/self.buttonArray.count,self.height);
+       
+        tmpBtn.frame = CGRectMake(i*(width/self.buttonArray.count) , 0, width/self.buttonArray.count,height);
         [tmpBtn buttonWithEdgeInsetsStyle:BRButtonEdgeInsetsStyleRight imageTitleSpace:5];
     }
-    self.lineView.frame = CGRectMake(0,self.height - 1, self.width, 1);
+    self.lineView.frame = CGRectMake(0,height - 1, width, 1);
 }
 
 #pragma mark Setup

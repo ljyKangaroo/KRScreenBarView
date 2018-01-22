@@ -88,15 +88,16 @@ UICollectionViewDelegateFlowLayout>
 }
 
 - (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
-    
+    CGFloat cellW = cell.frame.size.width;
+    CGFloat cellH = cell.frame.size.height;
     CAShapeLayer *maskLayer = [CAShapeLayer layer];
-    maskLayer.frame = CGRectMake(0, 0, cell.width, cell.height);
+    maskLayer.frame = CGRectMake(0, 0, cellW, cellH);
     
     CAShapeLayer *borderLayer = [CAShapeLayer layer];
-    borderLayer.frame = CGRectMake(0, 0, cell.width, cell.height);
+    borderLayer.frame = CGRectMake(0, 0, cellW, cellH);
     borderLayer.fillColor = [UIColor clearColor].CGColor;
     
-    UIBezierPath *bezierPath = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(0, 0, cell.width, cell.height) cornerRadius:([KROptionCollectionCell cellHeight] *0.5)];
+    UIBezierPath *bezierPath = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(0, 0, cellW, cellH) cornerRadius:([KROptionCollectionCell cellHeight] *0.5)];
     maskLayer.path = bezierPath.CGPath;
     borderLayer.path = bezierPath.CGPath;
     

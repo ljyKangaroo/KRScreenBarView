@@ -1,21 +1,24 @@
 //
-//  KROptionCollectionCell.h
+//  KRScreenOptionTwoLeftCell.h
 //  ShareJobStudent
 //
-//  Created by AlbertHuang on 2018/1/19.
+//  Created by AlbertHuang on 2018/1/18.
 //  Copyright © 2018年 GeekBean Technology Co., Ltd. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface KROptionCollectionCell : UICollectionViewCell
+@interface KRScreenOptionTwoLeftCell : UITableViewCell
 
-+ (instancetype)cellNibWithCollectionView:(UICollectionView *)collectionView
+
++ (instancetype)cellNibWithTableView:(UITableView *)tableView
                         forIndexPath:(NSIndexPath *)indexPath;
 
-+ (void)registerNibWithCollectionView:(UICollectionView *)collectionView;
++ (void)registerNibWithTableView:(UITableView *)tableView;
+
 
 + (CGFloat)cellHeight;
++ (NSString *)cellIdentifier;
 
 @property (nonatomic, assign) BOOL isSelect;
 

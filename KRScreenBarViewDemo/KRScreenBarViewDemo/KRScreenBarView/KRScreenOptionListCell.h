@@ -20,6 +20,9 @@ typedef NS_ENUM(NSInteger,KRScreenOptionListCellStatus) {
 
 + (void)registerNibWithTableView:(UITableView *)tableView;
 
++ (CGFloat)cellHeight;
++ (NSString *)cellIdentifier;
+
 @property (nonatomic, assign) KRScreenOptionListCellStatus status;
 
 @property (nonatomic, copy) NSString *title;

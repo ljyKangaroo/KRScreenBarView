@@ -9,8 +9,7 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
-#import "UIView+Frame.h"
-#import "UIButton+Extension.h"
-#import "UITableViewCell+Extension.h"
+
+#import "UIButton+KRExtension.h"
 #import "Defines.h"
 #endif /* PrefixHeader_pch */
