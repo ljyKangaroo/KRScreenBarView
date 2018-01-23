@@ -225,8 +225,8 @@ KROptionCollectionViewDataSource>
 #pragma mark - Private Methods
 /** 点击cell后 */
 - (void)selectedDismissWithView:(UIView *)view
-                       indexPath:(NSIndexPath *)indexPath
-                            type:(KRScreenBarViewType)type {
+                      indexPath:(NSIndexPath *)indexPath
+                           type:(KRScreenBarViewType)type {
     /** 刷新索引 */
     [self layoutOptionViewWithIndex:view.tag];
     
@@ -254,7 +254,7 @@ KROptionCollectionViewDataSource>
 }
 /** 根据Tag回调对应选择方法 */
 - (void)privateDidSelectWithTag:(NSInteger)tag
-                indexPath:(NSIndexPath *)indexPath {
+                      indexPath:(NSIndexPath *)indexPath {
     if([self.delegate respondsToSelector:@selector(didSelectScreenBarViewCellWithIndexPath:tag:)]) {
         [self.delegate didSelectScreenBarViewCellWithIndexPath:indexPath tag:tag];
     }
