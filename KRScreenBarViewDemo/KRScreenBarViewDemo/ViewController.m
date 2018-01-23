@@ -48,7 +48,7 @@ KRScreenBarViewDataSource>
 
 #pragma mark - KRScreenBarViewDelegate
 
-- (void)didSelectScreenBarViewCellWithIndexPath:(NSIndexPath *)indexPath type:(KRScreenBarViewType)type {
+- (void)didSelectScreenBarViewCellWithIndexPath:(NSIndexPath *)indexPath tag:(NSInteger)tag {
     
 }
 
