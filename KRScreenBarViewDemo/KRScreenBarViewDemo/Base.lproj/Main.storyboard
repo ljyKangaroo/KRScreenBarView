@@ -20,11 +20,29 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K1X-bc-nog" customClass="KRScreenBarView">
+                                <rect key="frame" x="0.0" y="308.5" width="375" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="SdC-1E-V1l"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="K1X-bc-nog" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8F4-VF-pUq"/>
+                            <constraint firstItem="K1X-bc-nog" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Hrk-zs-1IJ"/>
+                            <constraint firstAttribute="trailing" secondItem="K1X-bc-nog" secondAttribute="trailing" id="vzN-9X-s1N"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nibScreenBarView" destination="K1X-bc-nog" id="u1P-vd-ghx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
         </scene>
     </scenes>
 </document>

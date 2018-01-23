@@ -12,6 +12,7 @@
 KRScreenBarViewDelegate,
 KRScreenBarViewDataSource>
 @property (nonatomic, strong) KRScreenBarView *screenBarView;
+@property (weak, nonatomic) IBOutlet KRScreenBarView *nibScreenBarView;
 @end
 
 @implementation ViewController
@@ -37,12 +38,15 @@ KRScreenBarViewDataSource>
 }
 
 - (void)setupUI {
+    _nibScreenBarView.delegate =self;
+    _nibScreenBarView.dataSource = self;
     [self.view addSubview:self.screenBarView];
     NSArray *titles = @[@"类别", @"筛选", @"排序"];
     NSString *onelist = [NSString stringWithFormat:@"%zd",KRScreenBarViewTypeOneList];
     NSString *twolist = [NSString stringWithFormat:@"%zd",KRScreenBarViewTypeTwoList];
     NSString *collectionlist = [NSString stringWithFormat:@"%zd",KRScreenBarViewTypeCollection];
     NSArray *types = @[onelist,twolist,collectionlist];
+    [_nibScreenBarView setupWithTitles:titles types:types];
     [_screenBarView setupWithTitles:titles types:types];
 }
 
