@@ -199,7 +199,7 @@ KROptionCollectionViewDataSource>
 #pragma mark - TwoListViewDelegate
 
 - (void)didSelectScreenOptionTwoLeftListWithView:(UIView *)view indexPath:(NSIndexPath *)indexPath {
-    [self privateDidSelectWithType:KRScreenBarViewTypeTwoLeftList indexPath:indexPath];
+    [self privateDidSelectWithTag:view.tag indexPath:indexPath];
 }
 
 - (void)didSelectScreenOptionTwoRightListWithView:(UIView *)view indexPath:(NSIndexPath *)indexPath {
@@ -234,7 +234,7 @@ KROptionCollectionViewDataSource>
     
     [self dismiss];
     
-    [self privateDidSelectWithType:type indexPath:indexPath];
+    [self privateDidSelectWithTag:view.tag indexPath:indexPath];
 }
 /** 根据Type获取数据源 */
 - (NSString *)setTitleWithType:(KRScreenBarViewType)type
@@ -252,11 +252,11 @@ KROptionCollectionViewDataSource>
     }
     return 0;
 }
-/** 根据Type回调对应选择方法 */
-- (void)privateDidSelectWithType:(KRScreenBarViewType)type
+/** 根据Tag回调对应选择方法 */
+- (void)privateDidSelectWithTag:(NSInteger)tag
                 indexPath:(NSIndexPath *)indexPath {
-    if([self.delegate respondsToSelector:@selector(didSelectScreenBarViewCellWithIndexPath:type:)]) {
-        [self.delegate didSelectScreenBarViewCellWithIndexPath:indexPath type:type];
+    if([self.delegate respondsToSelector:@selector(didSelectScreenBarViewCellWithIndexPath:tag:)]) {
+        [self.delegate didSelectScreenBarViewCellWithIndexPath:indexPath tag:tag];
     }
 }
 /** 刷新标题按钮 */
