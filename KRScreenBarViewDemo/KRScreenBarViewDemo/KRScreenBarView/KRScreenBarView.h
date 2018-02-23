@@ -20,6 +20,7 @@ typedef NS_ENUM(NSInteger,KRScreenBarViewType) {
 @optional
 /** 选择回调 */
 - (void)didSelectScreenBarViewCellWithIndexPath:(NSIndexPath *)indexPath
+                                           type:(KRScreenBarViewType)type
                                             tag:(NSInteger)tag;
 @end
 
@@ -28,10 +29,12 @@ typedef NS_ENUM(NSInteger,KRScreenBarViewType) {
 @required
 /** 根据type来返回对应的数据源 */
 - (NSString *)screenBarViewCellDataSourceWithIndexPath:(NSIndexPath *)indexPath
-                                                  type:(KRScreenBarViewType )type;
+                                                  type:(KRScreenBarViewType)type
+                                                   tag:(NSInteger)tag;
 /** 根据type来返回对应的个数 */
-- (NSInteger )screenBarViewCellCountWithSection:(NSInteger )section
-                                           type:(KRScreenBarViewType )type;
+- (NSInteger )screenBarViewCellCountWithSection:(NSInteger)section
+                                           type:(KRScreenBarViewType)type
+                                            tag:(NSInteger)tag;
 @end
 
 @interface KRScreenBarView : UIView

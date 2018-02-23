@@ -163,12 +163,12 @@ KROptionCollectionViewDataSource>
 
 - (NSString *)screenOptionListCellTitleWithView:(UIView *)view
                                       indexPath:(NSIndexPath *)indexPath {
-    return [self setTitleWithType:KRScreenBarViewTypeOneList indexPath:indexPath];
+    return [self setTitleWithType:KRScreenBarViewTypeOneList indexPath:indexPath tag:view.tag];
 }
 
 - (NSInteger)screenOptionListCellCountWithView:(UIView *)view
                                        section:(NSInteger)section {
-    return [self setCountWithType:KRScreenBarViewTypeOneList section:section];
+    return [self setCountWithType:KRScreenBarViewTypeOneList section:section tag:view.tag];
 }
 
 #pragma mark - ListViewDelegate
@@ -181,25 +181,25 @@ KROptionCollectionViewDataSource>
 #pragma mark - TwoListViewDataSource
 
 - (NSString *)screenOptionTwoLeftCellTitleWithView:(UIView *)view indexPath:(NSIndexPath *)indexPath {
-    return [self setTitleWithType:KRScreenBarViewTypeTwoLeftList indexPath:indexPath];
+    return [self setTitleWithType:KRScreenBarViewTypeTwoLeftList indexPath:indexPath tag:view.tag];
 }
 
 - (NSString *)screenOptionTwoRightCellTitleWithView:(UIView *)view indexPath:(NSIndexPath *)indexPath {
-    return [self setTitleWithType:KRScreenBarViewTypeTwoRightList indexPath:indexPath];
+    return [self setTitleWithType:KRScreenBarViewTypeTwoRightList indexPath:indexPath tag:view.tag];
 }
 
 - (NSInteger)screenOptionTwoLeftCellCountWithView:(UIView *)view section:(NSInteger)section {
-    return [self setCountWithType:KRScreenBarViewTypeTwoLeftList section:section];
+    return [self setCountWithType:KRScreenBarViewTypeTwoLeftList section:section tag:view.tag];
 }
 
 -(NSInteger)screenOptionTwoRightCellCountWithView:(UIView *)view section:(NSInteger)section {
-    return [self setCountWithType:KRScreenBarViewTypeTwoRightList section:section];
+    return [self setCountWithType:KRScreenBarViewTypeTwoRightList section:section tag:view.tag];
 }
 
 #pragma mark - TwoListViewDelegate
 
 - (void)didSelectScreenOptionTwoLeftListWithView:(UIView *)view indexPath:(NSIndexPath *)indexPath {
-    [self privateDidSelectWithTag:view.tag indexPath:indexPath];
+    [self privateDidSelectWithTag:view.tag type:KRScreenBarViewTypeTwoLeftList indexPath:indexPath];
 }
 
 - (void)didSelectScreenOptionTwoRightListWithView:(UIView *)view indexPath:(NSIndexPath *)indexPath {
@@ -209,11 +209,11 @@ KROptionCollectionViewDataSource>
 #pragma mark - CollectionViewDataSource
 
 - (NSString *)optionCollectionCellTitleWithView:(UIView *)view indexPath:(NSIndexPath *)indexPath {
-    return [self setTitleWithType:KRScreenBarViewTypeCollection indexPath:indexPath];
+    return [self setTitleWithType:KRScreenBarViewTypeCollection indexPath:indexPath tag:view.tag];
 }
 
 - (NSInteger)optionCollectionCellCountWithView:(UIView *)view section:(NSInteger)section {
-    return [self setCountWithType:KRScreenBarViewTypeCollection section:section];
+    return [self setCountWithType:KRScreenBarViewTypeCollection section:section tag:view.tag];
 }
 
 #pragma mark -CollectionViewDelegate
@@ -234,29 +234,32 @@ KROptionCollectionViewDataSource>
     
     [self dismiss];
     
-    [self privateDidSelectWithTag:view.tag indexPath:indexPath];
+    [self privateDidSelectWithTag:view.tag type:type indexPath:indexPath];
 }
 /** 根据Type获取数据源 */
 - (NSString *)setTitleWithType:(KRScreenBarViewType)type
-                     indexPath:(NSIndexPath *)indexPath{
-    if([self.dataSource respondsToSelector:@selector(screenBarViewCellDataSourceWithIndexPath:type:)]) {
-        return [self.dataSource screenBarViewCellDataSourceWithIndexPath:indexPath type:type];
+                     indexPath:(NSIndexPath *)indexPath
+                           tag:(NSInteger)tag {
+    if([self.dataSource respondsToSelector:@selector(screenBarViewCellDataSourceWithIndexPath:type:tag:)]) {
+        return [self.dataSource screenBarViewCellDataSourceWithIndexPath:indexPath type:type tag:tag];
     }
     return nil;
 }
 /** 根据Type获取个数 */
 - (NSInteger)setCountWithType:(KRScreenBarViewType)type
-                      section:(NSInteger)section{
-    if([self.dataSource respondsToSelector:@selector(screenBarViewCellCountWithSection:type:)]) {
-        return [self.dataSource screenBarViewCellCountWithSection:section type:type];
+                      section:(NSInteger)section
+                          tag:(NSInteger)tag {
+    if([self.dataSource respondsToSelector:@selector(screenBarViewCellCountWithSection:type:tag:)]) {
+        return [self.dataSource screenBarViewCellCountWithSection:section type:type tag:tag];
     }
     return 0;
 }
 /** 根据Tag回调对应选择方法 */
 - (void)privateDidSelectWithTag:(NSInteger)tag
+                           type:(KRScreenBarViewType)type
                       indexPath:(NSIndexPath *)indexPath {
-    if([self.delegate respondsToSelector:@selector(didSelectScreenBarViewCellWithIndexPath:tag:)]) {
-        [self.delegate didSelectScreenBarViewCellWithIndexPath:indexPath tag:tag];
+    if([self.delegate respondsToSelector:@selector(didSelectScreenBarViewCellWithIndexPath:type:tag:)]) {
+        [self.delegate didSelectScreenBarViewCellWithIndexPath:indexPath type:type tag:tag];
     }
 }
 /** 刷新标题按钮 */
@@ -265,8 +268,8 @@ KROptionCollectionViewDataSource>
                                   type:(KRScreenBarViewType)type{
     
     NSString *title = nil;
-    if([self.dataSource respondsToSelector:@selector(screenBarViewCellDataSourceWithIndexPath:type:)]) {
-        title = [self.dataSource screenBarViewCellDataSourceWithIndexPath:indexPath type:type];
+    if([self.dataSource respondsToSelector:@selector(screenBarViewCellDataSourceWithIndexPath:type:tag:)]) {
+        title = [self.dataSource screenBarViewCellDataSourceWithIndexPath:indexPath type:type tag:tag];
     }
     [self.titleBarView relaodButtonWithIndex:tag title:title];
 }
